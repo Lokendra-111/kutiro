@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grand Restaurant Menu</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:35px 20px;
+    }
+
+    header h1{
+      font-size:45px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#ccc;
+      font-size:18px;
+    }
+
+    .container{
+      width:92%;
+      max-width:1400px;
+      margin:40px auto;
+    }
+
+    .section-title{
+      background:#ff6600;
+      color:white;
+      padding:15px;
+      border-radius:8px;
+      margin:40px 0 25px;
+      font-size:28px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:18px;
+    }
+
+    .content h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .content p{
+      color:#666;
+      font-size:14px;
+      margin-bottom:12px;
+      line-height:1.5;
+    }
+
+    .price{
+      color:#ff6600;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    footer{
+      margin-top:50px;
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kutiro Restaurant</h1>
+  <p>Enjoy Delicious Food From Around The World</p>
+</header>
+
+<div class="container">
+
+  <!-- STARTERS -->
+  <h2 class="section-title">Starters</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908176997-431b5f0cdb84?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Chicken Wings</h3>
+        <p>Crispy spicy wings served with hot sauce.</p>
+        <div class="price">$8</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>French Fries</h3>
+        <p>Golden crunchy fries with tomato dip.</p>
+        <div class="price">$5</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Spring Rolls</h3>
+        <p>Fresh vegetable spring rolls with sauce.</p>
+        <div class="price">$6</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Garlic Bread</h3>
+        <p>Toasted garlic bread with cheese topping.</p>
+        <div class="price">$4</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PIZZA -->
+  <h2 class="section-title">Pizza</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Cheese Pizza</h3>
+        <p>Loaded mozzarella cheese pizza.</p>
+        <div class="price">$15</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Pepperoni Pizza</h3>
+        <p>Pepperoni slices with extra cheese.</p>
+        <div class="price">$18</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Veggie Pizza</h3>
+        <p>Fresh vegetables with Italian herbs.</p>
+        <div class="price">$14</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BURGERS -->
+  <h2 class="section-title">Burgers</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Beef Burger</h3>
+        <p>Juicy grilled beef burger with fries.</p>
+        <div class="price">$12</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Chicken Burger</h3>
+        <p>Crunchy chicken burger with mayo.</p>
+        <div class="price">$10</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Double Cheese Burger</h3>
+        <p>Double patty burger with cheese layers.</p>
+        <div class="price">$16</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NEPALI FOOD -->
+  <h2 class="section-title">Nepali Specials</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Momo</h3>
+        <p>Traditional Nepali momo with achar.</p>
+        <div class="price">$7</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1625943555419-56a2cb596640?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Dal Bhat</h3>
+        <p>Classic Nepali dal bhat set meal.</p>
+        <div class="price">$11</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Chowmein</h3>
+        <p>Hot and spicy Nepali style chowmein.</p>
+        <div class="price">$8</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DRINKS -->
+  <h2 class="section-title">Drinks</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Cold Coffee</h3>
+        <p>Chilled coffee with cream topping.</p>
+        <div class="price">$4</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Fresh Juice</h3>
+        <p>Fresh mixed seasonal fruit juice.</p>
+        <div class="price">$3</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Milkshake</h3>
+        <p>Chocolate milkshake with ice cream.</p>
+        <div class="price">$5</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DESSERTS -->
+  <h2 class="section-title">Desserts</h2>
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Chocolate Cake</h3>
+        <p>Rich chocolate layered cake slice.</p>
+        <div class="price">$6</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Ice Cream</h3>
+        <p>Vanilla ice cream with toppings.</p>
+        <div class="price">$4</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
+      <div class="content">
+        <h3>Donuts</h3>
+        <p>Soft sweet donuts with chocolate glaze.</p>
+        <div class="price">$5</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Food Paradise Restaurant | Designed With ❤️
+</footer>
+
+</body>
+</html>
